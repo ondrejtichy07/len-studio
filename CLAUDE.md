@@ -93,22 +93,18 @@ Lokace se automaticky zpřesní. Nezapomeň doplnit i druhý `BeautySalon` blok 
 ### Změnit ceny
 Edituj pole v `src/content/pricelist.js`.
 
-### Doplnit skutečné domain
-V `index.html` (canonical, og:url) a `public/sitemap.xml`/`robots.txt` je zatím placeholder
-`https://len.studio/` – nahradit finální doménou při nasazení.
-
 ## CSS konvence
 - Barvy přes CSS proměnné v `src/index.css`
 - BEM pojmenování tříd (`.component__element--modifier`)
 - Breakpoint pro mobil: `max-width: 768px`
 
-## Nasazení (plán)
-- Build: `npm run build` → složka `dist/`
-- GitHub repo → Cloudflare Pages (build command `npm run build`, output `dist`)
-- Alternativně WebGlobe – statický `dist/` upload nebo přes CI
+## Nasazení
+- Repo: `github.com/ondrejtichy07/len-studio` (SSH remote), push na `main` → automatický deploy
+- Cloudflare Pages: build command `npm run build`, output `dist`, žádné env proměnné nejsou potřeba
+- Doména: `len-studio.cz` (registrace WebGlobe, DNS/nameservery směřují na Cloudflare)
 
 ## TODO
 - [ ] Doplnit číslo popisné k adrese Domažlice/Zahořany (Masarykova, zatím bez č.p.)
-- [ ] Zvolit finální doménu a nahradit `https://len.studio/` placeholder v `index.html`, `robots.txt`, `sitemap.xml`
+- [ ] Ověřit, že custom domain `len-studio.cz` je aktivní v Cloudflare Pages a má vystavené SSL
 - [ ] Vytvořit `og-image.png` (1200×630) pro sdílení na sociálních sítích
 - [ ] Zvážit napojení Google Business Profile / recenze (až budou k dispozici)
