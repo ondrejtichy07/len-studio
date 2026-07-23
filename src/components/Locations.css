@@ -97,6 +97,8 @@
 }
 
 .location-card__map {
+  position: relative;
+  isolation: isolate;
   border-radius: 14px;
   overflow: hidden;
   height: 220px;
