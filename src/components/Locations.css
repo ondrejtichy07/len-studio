@@ -1,0 +1,110 @@
+.locations__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.location-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-card__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.location-card__address {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.location-card__days-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.location-card__days-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.location-card__days-list li {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--green-dark);
+  background: var(--green-light);
+  padding: 6px 14px;
+  border-radius: 100px;
+}
+
+.location-card__hint {
+  font-size: 0.82rem;
+  color: var(--gray);
+  line-height: 1.55;
+}
+
+.location-card__map {
+  border-radius: 14px;
+  overflow: hidden;
+  height: 220px;
+}
+
+.location-card__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.location-card__note {
+  background: var(--rose-light);
+  border-left: 3px solid var(--rose);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 0.85rem;
+  color: var(--rose-dark);
+}
+
+.location-card__cta {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--green);
+  transition: color 0.2s;
+  margin-top: auto;
+}
+
+.location-card__cta:hover {
+  color: var(--green-dark);
+}
+
+.location-card__maps-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--rose);
+  transition: color 0.2s;
+}
+
+.location-card__maps-link:hover {
+  color: var(--rose-dark);
+}
+
+@media (max-width: 768px) {
+  .locations__grid {
+    grid-template-columns: 1fr;
+  }
+}

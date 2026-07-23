@@ -1,0 +1,135 @@
+.contact-section {
+  background: var(--dark);
+  max-width: 100%;
+  padding: 80px 24px;
+}
+
+.contact-section .section-label {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--rose);
+}
+
+.contact-section .section-title {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.contact-section .section-subtitle {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact__wrap {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
+}
+
+.contact__items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 18px 20px;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.contact__item:hover {
+  background: rgba(255, 255, 255, 0.09);
+  transform: translateX(4px);
+}
+
+.contact__item-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.contact__item--whatsapp .contact__item-icon {
+  background: #25d366;
+}
+
+.contact__item--instagram .contact__item-icon {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.contact__item--facebook .contact__item-icon {
+  background: #1877f2;
+}
+
+.contact__item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact__item-label {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.contact__item-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact__reservio {
+  background: var(--green);
+  border-radius: 18px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.contact__reservio-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact__reservio-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.contact__reservio .btn--rose {
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .contact__wrap {
+    grid-template-columns: 1fr;
+  }
+}

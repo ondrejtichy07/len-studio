@@ -1,0 +1,81 @@
+.footer {
+  background: var(--dark-light);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.footer__logo-badge {
+  display: inline-flex;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 14px;
+}
+
+.footer__logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.footer__addr {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.footer__link {
+  color: var(--green);
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footer__link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer__dot {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 4px;
+}
+
+.footer__dev {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer__dev-link {
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.2s;
+}
+
+.footer__dev-link:hover {
+  color: var(--rose);
+}
