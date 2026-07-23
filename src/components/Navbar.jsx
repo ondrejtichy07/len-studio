@@ -28,7 +28,8 @@ export default function Navbar() {
         <span className="navbar__logo-badge">
           <img src={logo} alt="LEN studio" className="navbar__logo-img" />
         </span>
-        <span className="navbar__logo-line2">LEN STUDIO · Kristýna Lenkerová</span>
+        <span className="navbar__logo-line2 navbar__logo-line2--full">LEN STUDIO · Kristýna Lenkerová</span>
+        <span className="navbar__logo-line2 navbar__logo-line2--short">LEN studio</span>
       </a>
 
       <nav className={`navbar__nav ${open ? 'navbar__nav--open' : ''}`}>

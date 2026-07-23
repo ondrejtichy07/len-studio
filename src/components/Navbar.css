@@ -47,9 +47,22 @@
   border-left: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.navbar__logo-line2--short {
+  display: none;
+}
+
 @media (max-width: 480px) {
-  .navbar__logo-line2 {
+  .navbar__logo-line2--full {
     display: none;
+  }
+
+  .navbar__logo-line2--short {
+    display: inline;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
   }
 }
 
