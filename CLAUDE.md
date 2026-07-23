@@ -106,5 +106,4 @@ Edituj pole v `src/content/pricelist.js`.
 ## TODO
 - [ ] Doplnit číslo popisné k adrese Domažlice/Zahořany (Masarykova, zatím bez č.p.)
 - [ ] Ověřit, že custom domain `len-studio.cz` je aktivní v Cloudflare Pages a má vystavené SSL
-- [ ] Vytvořit `og-image.png` (1200×630) pro sdílení na sociálních sítích
 - [ ] Zvážit napojení Google Business Profile / recenze (až budou k dispozici)

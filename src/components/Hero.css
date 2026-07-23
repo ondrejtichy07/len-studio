@@ -43,7 +43,7 @@
 
 .hero__stats {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 24px;
   flex-wrap: wrap;
 }
@@ -71,7 +71,6 @@
 
 .hero__divider {
   width: 1px;
-  height: 36px;
   background: var(--border);
   flex-shrink: 0;
 }
