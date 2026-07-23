@@ -1,6 +1,7 @@
 import { locations, contact } from '../content/contact.js'
 import berounPhoto from '../assets/beroun.jpg'
 import zahoranyPhoto from '../assets/zahorany.jpeg'
+import LocationMap from './LocationMap.jsx'
 import './Locations.css'
 
 const photos = {
@@ -45,22 +46,9 @@ export default function Locations() {
               </ul>
             </div>
 
-            {loc.hasFullAddress ? (
+            {loc.hasFullAddress && loc.coords ? (
               <div className="location-card__map">
-                <iframe
-                  title={`Mapa - ${loc.name}`}
-                  src={
-                    loc.coords
-                      ? `https://maps.google.com/maps?q=${loc.coords.lat},${loc.coords.lng}&z=16&output=embed`
-                      : `https://maps.google.com/maps?q=${encodeURIComponent(loc.mapQuery)}&output=embed`
-                  }
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                <LocationMap lat={loc.coords.lat} lng={loc.coords.lng} label={loc.name} />
               </div>
             ) : (
               <p className="location-card__note">

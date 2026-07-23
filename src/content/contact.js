@@ -25,6 +25,7 @@ export const locations = [
     address: 'Zahořany 3, 344 01 Domažlice',
     days: ['Pondělí', 'Pátek'],
     mapQuery: 'Zahořany 3, Domažlice',
+    coords: { lat: 49.4344312, lng: 13.0004069 },
     mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Zahořany+3,+Doma%C5%BElice',
     hasFullAddress: true,
   },
