@@ -1,4 +1,4 @@
-import heroPhoto from '../assets/gallery/gallery-06.jpg'
+import heroPhoto from '../assets/gallery/gallery-08.jpg'
 import { contact } from '../content/contact.js'
 import './Hero.css'
 

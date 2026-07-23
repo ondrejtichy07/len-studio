@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo-white.jpg'
 import { contact } from '../content/contact.js'
 import { IconWhatsApp, IconInstagram, IconFacebook } from './icons.jsx'
 import './Navbar.css'
@@ -28,7 +28,7 @@ export default function Navbar() {
         <span className="navbar__logo-badge">
           <img src={logo} alt="LEN studio" className="navbar__logo-img" />
         </span>
-        <span className="navbar__logo-line2">Kristýna Lenkerová</span>
+        <span className="navbar__logo-line2">LEN STUDIO · Kristýna Lenkerová</span>
       </a>
 
       <nav className={`navbar__nav ${open ? 'navbar__nav--open' : ''}`}>

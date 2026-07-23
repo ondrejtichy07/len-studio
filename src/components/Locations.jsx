@@ -1,5 +1,12 @@
 import { locations, contact } from '../content/contact.js'
+import berounPhoto from '../assets/beroun.jpg'
+import zahoranyPhoto from '../assets/zahorany.jpeg'
 import './Locations.css'
+
+const photos = {
+  beroun: berounPhoto,
+  domazlice: zahoranyPhoto,
+}
 
 export default function Locations() {
   return (
@@ -18,6 +25,12 @@ export default function Locations() {
       <div className="locations__grid">
         {locations.map((loc) => (
           <div key={loc.key} className="location-card">
+            {photos[loc.key] && (
+              <div className={`location-card__photo location-card__photo--${loc.key}`}>
+                <img src={photos[loc.key]} alt={loc.name} loading="lazy" />
+              </div>
+            )}
+
             <div className="location-card__header">
               <h3 className="location-card__title">{loc.name}</h3>
               <p className="location-card__address">{loc.address}</p>

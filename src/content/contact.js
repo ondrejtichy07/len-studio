@@ -22,9 +22,10 @@ export const locations = [
   {
     key: 'domazlice',
     name: 'Domažlice – Zahořany',
-    address: 'Masarykova, Zahořany, Domažlice',
+    address: 'Zahořany 3, 344 01 Domažlice',
     days: ['Pondělí', 'Pátek'],
-    mapQuery: 'Masarykova, Zahořany, Domažlice',
+    mapQuery: 'Zahořany 3, Domažlice',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Zahořany+3,+Doma%C5%BElice',
     hasFullAddress: true,
   },
 ]

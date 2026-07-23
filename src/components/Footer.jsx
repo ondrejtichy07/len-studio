@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo-white.jpg'
 import { contact } from '../content/contact.js'
 import './Footer.css'
 
